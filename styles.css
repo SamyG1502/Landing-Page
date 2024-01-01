@@ -1,0 +1,241 @@
+body {
+   background-color: #FFFFFF;
+   padding: 0;
+   margin: 0;
+   text-align: center; 
+   position: relative;
+}
+
+h2 {
+    box-shadow: 0 0 10px #FFFFFF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    display: flex;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    padding: 20px 0px 20px 100px;
+    align-items: center;
+    
+}
+.logo img {
+    width: 84px;
+    height: 84px;
+    margin-right: auto; 
+    border-radius: 50px;
+    left: 2px;
+    top: 10px;
+    position: absolute;
+    /*transition: left 2s;
+    animation-iteration-count: infinite;*/
+    animation-name: logo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    
+    
+}
+.logo img:hover 
+ {
+    left: 150px ;
+}
+
+@keyframes logo 
+{
+0%,100%
+{
+     left: 10;
+     top: 10px;    
+}
+25% 
+{
+    left: 200px;
+    top: 0;
+}
+50% 
+{
+    left: 200px;
+    top: 30px;
+}
+75%
+{
+    top: 30px;
+}
+
+}
+.links-right {
+    display: flex;
+    margin-left: auto;
+    padding: 0px 100px 0px 0px;
+    align-items: end;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Roboto', arial;
+    box-shadow: 0 0 10px #FFFFFF;
+}
+/*anmation*/
+
+@keyframes bg
+{
+  0%
+  {
+    background-color: powderblue;
+  }
+
+  25% 
+  {
+    background-color: rgb(27, 80, 62);
+  }
+}
+.head {
+    display: flex;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+    animation: bg 4s linear infinite ;
+}
+
+.head-1 {
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 50px;
+}
+.head-1 p {
+    font-family: 'Roboto', arial;
+    opacity: 0.7;
+}
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin: 0;
+    font-family: 'Roboto', arial;
+}
+.head-1 button {
+    display: block;
+    text-align: center;
+    width: 80px;
+    background: blue;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+    /*transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;*/
+    transition: all 1s linear;
+}
+.head-1 button:hover
+{
+    box-shadow: 0 0 10px rgb(85, 208, 24);
+    width: 50%;
+    background-color: rgb(168, 192, 144);
+    text-shadow: 0 0 5px aliceblue, 0 0 5px navy;
+}
+
+.head-image img {
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 0 10px #FFFFFF;
+}
+/*cars*/
+.last-part {
+    align-items: center;
+    transition-property: all;
+    transition-duration: 5s;
+}
+
+.last-part img:hover
+{
+    
+        box-shadow: 0 0 30px rgb(113, 94, 182);
+        width: 100%;
+        background-color: rgb(168, 192, 144);
+        text-shadow: 0 0 5px aliceblue, 0 0 5px navy;
+    
+}
+
+.content-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content-info img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+    margin: 5px 20px 0px 20px;
+}
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: lightsteelblue;
+    padding: 0 200px;
+}
+.quote p {
+    font-size: 30px;
+    font-style: inherit;
+}
+.quote b {
+    padding-botatom: 25px;
+    padding-right: 15px;
+    text-align: right;
+}
+.blue-part {
+    background-color: #3882F6;
+    display: flex;
+    margin: 50px 200px;
+    gap:1rem;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 10px;
+    justify-content: space-around;
+}
+.items {
+    flex: 1;
+    max-width: fit-content;
+}
+.item2{
+    max-width: fit-content;
+}
+.blue-button {
+    display: block;
+    text-align: center;
+    width: 80px;
+    background: blue;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.blue-button:hover
+{
+    box-shadow: 0 0 4px rgb(24, 48, 208);
+    width: 100%;
+    background-color: rgb(168, 192, 144);
+    text-shadow: 0 0 5px aliceblue, 0 0 5px navy;
+}
+.last-part p {
+    font-weight: bolder;
+    font-family: 'Roboto', arial;
+}
+
+/*justify-content: width;
+align-content: height;*/
+
